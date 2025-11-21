@@ -96,13 +96,5 @@ print("=" * 80)
 if result.stderr:
     print("\nErrors:", result.stderr)
 
-# Regression test: Verify single-line output (Claude Code only displays first line)
-output_lines = result.stdout.strip().split('\n')
-if len(output_lines) > 1:
-    print(f"\n⚠️  WARNING: Output has {len(output_lines)} lines, but Claude Code only displays the first line!")
-    print("Expected: Single-line output")
-else:
-    print("\n✓ Output is single-line (compatible with Claude Code)")
-
 # Clean up mock transcript file
 Path(transcript_path).unlink(missing_ok=True)

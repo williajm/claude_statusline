@@ -1,0 +1,10 @@
+{
+  "colors": true,
+  "icons": {
+    "clean": "✅",
+    "dirty": "🚧",
+    "ahead": "⇡",
+    "behind": "⇣",
+    "high_usage": "⚠️"
+  }
+}
